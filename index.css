@@ -1,0 +1,172 @@
+:root {
+    --color-body: rgb(255, 255, 255);
+    --color-header: rgb(255, 165, 0);
+    --color-center: rgb(234, 255, 41);
+    --color-kard1: rgb(35, 130, 255);
+    --color-kard2: rgb(199, 199, 199);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        display: flex;
+        background-color: var(--color-body);
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        background-color: var(--color-body);
+        padding: 1%;
+        height: 10rem;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .header-left {
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-header);
+    }
+
+    .header-right {
+        width: 50%;
+        height: 100%;
+        background-color: var(--color-header);
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1%;
+    }
+
+    .center {
+        background-color: var(--color-center);
+        width: 100%;
+        height: 20rem;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1%;
+        gap: 1em;
+    }
+
+    .kard1 {
+        background-color: var(--color-kard1);
+        height: 12rem;
+        width: 100%;
+    }
+
+    footer {
+        margin: 1%;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .kard2 {
+        background-color: var(--color-kard2);
+        height: 12rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .header-left {
+        width: 100%;
+        height: 6rem;
+    }
+
+    .header-right {
+        width: 100%;
+        height: 6rem;
+    }
+
+    .container1 {
+        margin-top: 2%;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    .kard1 {
+        background-color: var(--color-kard1);
+        height: 8rem;
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1em;
+        margin: 1%;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .kard2 {
+        background-color: var(--color-kard2);
+        height: 8rem;
+        width: 100%;
+        margin: 3px;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+        gap: 1em;
+    }
+
+    .header-left {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .header-right {
+        width: 100%;
+        height: 4rem;
+    }
+
+    .center {
+        height: 12rem;
+    }
+
+    .container1 {
+        margin-top: 2%;
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+}
