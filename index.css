@@ -144,13 +144,13 @@ footer {
         align-items: center;
         flex-wrap: wrap;
         width: 100%;
-        gap: 1em;
+        gap: 2em;
     }
 
     .kard2 {
         background-color: var(--color-kard2);
         height: 10rem;
-        width: 24rem;
+        width: 25rem;
     }
 }
 
